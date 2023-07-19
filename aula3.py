@@ -28,13 +28,13 @@ else:
 
 """
 Faça um programa que pergunte a idade, peso e altura de uma pessoa e decide se ela está apta a ser do exercito.
-Para entrar no exercito, a pessoa tem que ter mais de 18 anos, mais de 60kg e medir mais de 1.70m!
+Para entrar no exercito, a pessoa tem que ter mais de 18 anos, mais ou igual 60kg e medir mais ou igual 1.70m!
 """
 idade = int(input("Digite sua idade: "))
 peso = float(input("Digite seu peso: "))
 altura = float(input("Digite sua altura: "))
 
-if idade > 18 and peso > 60 and altura > 1.70:
+if idade > 18 and peso >= 60 and altura >= 1.70:
     print("Apto!")
 else:
     print("Inapto!")
